@@ -3,10 +3,9 @@ package threadStudy;
 public class Memory {
 	private int data;
 	
-	public Memory() {
-		
-	}
+	public Memory() {}
 	
+	//public void synchronized setData(int data){
 	public  void setData(int data) {
 		synchronized (this) {
 			this.data = data;
